@@ -48,6 +48,51 @@ npm run dev
 cd server
 node server.js
 ```
+# HOW TO PLAY
+
+Capture the crux is a two-player strategy board game. 2 players compete against each other using 5 pieces, each having different stats and abilities, to capture the opponent's base.
+
+## Rooms
+One player creates a room and shares the room code with the other player. Once both players join, the game starts.
+
+## Game Overview
+Pieces and Their Special Abilities
+Scout: Can move 3 steps and has low health (HP: 15) and attack power (ATK: 10).
+Special ability: Pathfinder (isn't blocked by pieces/goes through pieces).
+Knight: Moves 2 steps with decent health (HP: 25) and attack power (ATK: 15).
+Special ability: Aggressor (+5 damage when it initiates an attack).
+Tank: Moves 1 step but has high health (HP: 40).
+Special ability: Fortified (reduced damage taken when on its base).
+Mage: Moves 2 steps with moderate health (HP: 20) and attack power (ATK: 15).
+Special ability: Ranged (can attack from a distance of 2 steps).
+Healer: Moves 2 steps with moderate health (HP: 30) and low attack power (ATK: 5).
+Special ability: Medic (can heal one of the deployed allies by 15 HP when deployed).
+
+## Pieces' Deployment and Points
+To deploy a piece, select a card. The card will glow red to indicate that its selected. Pieces can only be placed at one of the 2 deployable points of your side ( Be sure to not let them get captured).
+
+For the player who created the room (Player 1), their side is green one. For the player who joined the room through code (Player 2), their side is the blue one.
+
+For both players, the darker 2 Points are the deployable points, while the lighter one is the base. Place any of your piece on opponent's base to win the game.
+
+## Moving a Piece
+To move a piece, click on the piece on the board. It will glow purple and the valid points it can move to will glow red.
+
+Click on any red point to move your piece to that point.
+
+## Combat Mechanics
+When you have a piece in range ( 2 for Mage, Adjacent for others ) of an opponent's piece and its your turn, you can click on the card of the piece. The opponent pieces that can be attacked will have their card glow blue. Click on the card to attack the piece. Your turn ends.
+
+When you attack an opponent's piece, the attacked piece's HP is reduced by the ATK of the attacking piece. The attacking piece's HP is reduced by the attacked piece's ATK. Meaning both pieces attack each other.
+
+If any piece has its Hp down to 0, it goes into Recovery (indicated by a black background). In order for the piece to get back into the game, another piece will have to go into Recovery essentially exchanging the pieces.
+
+## Combat Mechanics
+Some important points
+Zoom in or out if you are unable to view the full board along with the 5 piece cards.
+
+Reloading the tab will mean disconnecting the game. However, you can always create a new room.
+
 
 ### MONAD Chain Configuration for Metamask
 - **Network Name**: MONAD Testnet
